@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo's Games</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-size: 64px;
+            color: white;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .games-container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+        }
+        
+        .game-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            width: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .game-button {
+            width: 100%;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .grapple-button {
+            background: linear-gradient(135deg, #FF6B6B, #FF1493);
+        }
+        
+        .grapple-button:hover {
+            background: linear-gradient(135deg, #FF1493, #FF6B6B);
+            transform: scale(1.05);
+        }
+        
+        .sans-button {
+            background: linear-gradient(135deg, #4A90E2, #00D4FF);
+        }
+        
+        .sans-button:hover {
+            background: linear-gradient(135deg, #00D4FF, #4A90E2);
+            transform: scale(1.05);
+        }
+        
+        .game-image {
+            width: 100%;
+            height: 200px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 18px;
+            overflow: hidden;
+        }
+        
+        .game-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .game-description {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: left;
+        }
+        
+        .game-description h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎮 Enzo's Games 🎮</h1>
+    
+    <div class="games-container">
+        <!-- Grapple Tongue Legacy -->
+        <div class="game-card">
+            <a href="https://chongjunkai.github.io/grapple-tougue-legacy/" class="game-button grapple-button">
+                Grapple Tongue Legacy
+            </a>
+            
+            <div class="game-image">
+                <span>Game Screenshot</span>
+                <!-- Replace the span with an img tag when you have an image:
+                <img src="path-to-your-image.jpg" alt="Grapple Tongue Legacy">
+                -->
+            </div>
+            
+            <div class="game-description">
+                <h3>About the Game</h3>
+                <p>
+                    Swing through challenging levels using your grappling tongue! Navigate treacherous platforms, 
+                    avoid deadly spikes and slippery goo patches, collect all the coins, and master the physics-based 
+                    movement. With 10 unique levels of increasing difficulty, can you complete them all?
+                </p>
+            </div>
+        </div>
+        
+        <!-- Sans Fight Remastered -->
+        <div class="game-card">
+            <a href="https://chongjunkai.github.io/Sans-fight-remastered/" class="game-button sans-button">
+                Sans Fight Remastered
+            </a>
+            
+            <div class="game-image">
+                <span>Game Screenshot</span>
+                <!-- Replace the span with an img tag when you have an image:
+                <img src="path-to-your-image.jpg" alt="Sans Fight Remastered">
+                -->
+            </div>
+            
+            <div class="game-description">
+                <h3>About the Game</h3>
+                <p>
+                    Experience the legendary battle remastered! Face off against Sans in this challenging 
+                    bullet-hell boss fight. Dodge complex attack patterns, test your reflexes, and prove you have 
+                    what it takes to survive. A tribute to one of gaming's most iconic encounters.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
